@@ -1,0 +1,11 @@
+
+
+body,html,h1,h2,h3,h4,h5,h6,div,input,p,i,ul li,dl li,ul,ol{
+	margin: 0;padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul li,dl dd ,dl dt,ol,li{
+	list-style: none;
+}

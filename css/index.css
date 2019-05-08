@@ -1,0 +1,92 @@
+
+body{
+    background-color: rgb(244, 244, 244);
+}
+.main{
+    width: 1240px;margin: 0 auto;
+}
+#nav{
+    position: absolute;top: 0;width: 1240px;z-index: 10;
+}
+.logo{
+    float: left;
+}
+.nav-link{
+    float: right;
+}
+.nav-link li{
+    float:left;padding: 30px 25px 30px 0;
+}
+.nav-link a{
+    color: #fff;
+}
+#search{
+    float: right;width: 200px;height: 30px;
+    background-color: #fff; 
+    border-radius: 20px;
+    margin: 27px 20px 0 0;
+}
+#search #search-text{
+    border: 0px;width: 147px; margin: 8px 0 0 16px; 
+    font-size: 12px;
+    outline: 0px;
+}
+#search span{
+    font-size: 24px;float: right; margin: 2px 12px 0 0;
+}
+.logo-logon{
+    float: right;margin: 30px 20px 0 0;color:#fff;
+}
+.logo-shop{
+    float: right;margin: 30px 20px 0 0;color:#fff;
+}
+.img-list {
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+}
+.img-list li{
+    position: absolute;
+}
+.img-list img{
+    height: 680px;
+    margin-left:-500px; 
+}
+.banner{
+    position: relative;
+}
+.banner-nav-list{
+    position: absolute; bottom: 20px;
+    left: 47%;
+}
+.banner-nav-list li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.banner-nav-list .active{
+    width: 9px;height: 9px;
+    margin-top: 8px; 
+    background-color: transparent;
+    border:1px solid #ffffff;
+}
+#show{
+    height: 280px;background-color: #fff;
+}
+#show ul li{
+    float: left;width: 310px;height: 190px;
+    padding-top: 50px;text-align: center;
+}
+#show img{
+    height: 130px;
+}
+#show p{
+    color:#333;font-size: 20px;
+}
+#show span{
+    font-size: 14px;color: #999;
+}
