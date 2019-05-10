@@ -67,9 +67,7 @@ body{
     background-color: #fff;
     margin-top: 10px;
     margin-bottom: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 .conten-left{
    
@@ -79,7 +77,7 @@ body{
 }
 .conten-right{
    
-    width: 248px;
+    width: 302px;
     height: 114px;
     color: #666;
 }
@@ -88,9 +86,7 @@ body{
     font-weight: bolder;
     margin-bottom: 15px;
 }
-.conten-right p{
-    font-size: 14px;
-}
+
 .conten-right button{
     color: #FFF;
     border-color: #00c3f5;
@@ -142,7 +138,7 @@ body{
     width: 168px;
     height: 100px;
     float: right;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .service p{
     font-size: 13px;
@@ -253,3 +249,58 @@ body{
      height: 200px;
 }
 /* 有商品 */
+
+.tb{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #cccccc;
+    border-bottom: #cccccc 1px solid;
+
+    
+
+}
+.tb span:nth-child(1) input{
+    width: 18px;
+    height: 18px;
+}
+.tb span:nth-child(1),.tb2 span:nth-last-of-type(1){
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.tb span:nth-of-type(5){
+    padding-right: 50px;
+}
+.tb2{
+    height: 50px;
+    background-color: #FAFAFC;
+    border-bottom: #cccccc 1px solid;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.tb2 span:nth-child(1) input{
+    width: 18px;
+    height: 18px;
+}
+.tb2 span:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.addphone{
+
+    height: 238px;
+    background-color: red;
+}
+.and{
+    height: 88px;
+    background-color:blue;
+}
