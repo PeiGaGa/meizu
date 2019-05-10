@@ -6,7 +6,7 @@ body{
     width: 1240px;margin: 0 auto;
 }
 #nav{
-    position: absolute;top: 0;width: 100%;z-index: 1;
+    position: absolute;top: 0;width: 100%;z-index: 10;
 }
 .logo{
     float: left;
@@ -70,6 +70,7 @@ body{
 .logo-shop{
     float: right;margin: 30px 20px 0 0;color:#fff;
 }
+
 .img-list {
     width: 100%;
     height: 680px;
@@ -83,12 +84,13 @@ body{
     height: 680px;
     margin-left:-500px; 
 }
+
 .banner{
     position: relative;
 }
 .banner-nav-list{
     position: absolute; bottom: 20px;
-    left: 47%;
+    left: 47%;z-index: 10;
 }
 .banner-nav-list li {
     float: left;
@@ -105,7 +107,7 @@ body{
     border:1px solid #ffffff;
 }
 #show{
-    height: 280px;background-color: #fff;margin-bottom: 50px;
+    height: 280px;background-color: #fff;
 }
 #show ul li{
     float: left;width: 310px;height: 190px;
@@ -120,19 +122,24 @@ body{
 #show span{
     font-size: 14px;color: #999;
 }
-#section h1{
-    font-weight: 400;text-align: center;color: #333;margin-bottom: 10px;
-}
-.section-banner a{
+
+
+.banner-img a{
     height: 450px;display: block;
-    background: url('../images/section/section.jpg') -520px 0;
     transition: opacity .2s linear;
 }
-.section-banner a:hover{
+.banner-img a:hover{
     opacity: .85;
 }
+h1{
+    font-weight: 400;text-align: center;color: #333;margin: 50px 0 10px 0;
+}
+#section .banner-img a{
+    background: url('../images/section/1.jpg') -520px 0;
+}
 
-.section-show{
+
+.section-show,#audio,#parts,#house{
     overflow: hidden;
 }
 .big a{
@@ -160,7 +167,7 @@ body{
     padding-left: 14px;
 }
 .big .goods-price i{
-    font-size: 14px;font-style: normal;
+    font-size: 14px;
 }
 .goods-img{
     height: 460px;
@@ -216,7 +223,7 @@ body{
     font-size: 22px;margin-bottom: 5px;
 }
 .small .goods-price i{
-    font-size: 14px;font-style: normal;
+    font-size: 14px;
 }
 .sign-bull{
     position: absolute;
@@ -233,14 +240,77 @@ body{
     border-radius: 50%;
 }
 
-#audio h1{
-    font-weight: 400;text-align: center;color: #333;margin: 50px 0 10px 0;
+
+#audio .banner-img a{
+    background: url('../images/section/2.jpg') -520px 0;  
 }
-.audio-banner a{
-    height: 450px;display: block;
-    background: url('../images/section/audio.jpg') -520px 0;
-    transition: opacity .2s linear;
+
+.clearfix dt,.clearfix dd {
+    float: left;
+    position: relative;
+    width: 303px;
+    height: 375px;
+    margin-right: 9px;
+    margin-top: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all .3s ease;
+    text-align: center;
 }
-.audio-banner a:hover{
-    opacity: .85;
+.clearfix dd:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+.chlerfix dt,.chlerfix dd{
+    position: relative;
+}
+.clearfix span{
+    display: block;width: 100%;
+}
+.clearfix .box-info{
+    position: absolute;text-align: center;top: 270px;
+}
+.clearfix dt img{
+    width: 303px;
+}
+.clearfix dt .goods-name{
+    color: #fff;font-size: 21px;font-weight: 700;
+}
+.clearfix dt .goods-desc{
+    color: #fff;font-size: 14px;margin: 3px 0 3px 0;
+}
+.clearfix dt .goods-price{
+    font-size: 24px;font-weight: 700;color: #00fefb; 
+}
+
+
+.clearfix dd img{
+    width: 230px;margin-top: 30px;
+}
+.chlerfix dd{
+    width: 303px;height: 375px;
+}
+.clearfix dd .goods-name{
+    color: #333;font-size: 16px;
+}
+.clearfix dd .goods-desc{
+    color: #999;font-size: 14px;margin: 3px 0 3px 0;
+}
+.clearfix dd .goods-price{
+    color: #c00;font-size: 22px;
+}
+.clearfix dd .goods-price s{
+    font-size: 14px;
+    margin-left: 8px;
+    color: #666;
+}
+
+.clearfix dd:nth-child(4){
+    margin-right: 0;
+}
+#parts .banner-img a{
+    background:  url('../images/section/3.jpg') -520px 0;  
+}
+#house .banner-img a{
+    background:  url('../images/section/4.jpg') -520px 0;  
 }

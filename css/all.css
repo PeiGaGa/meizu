@@ -9,3 +9,13 @@ a{
 ul li,dl dd ,dl dt,ol,li{
 	list-style: none;
 }
+i{
+	font-style: normal;
+}
+dl{
+	margin-block-start: 0;
+    margin-block-end: 0;
+}
+dd{
+	margin-inline-start: 0;
+}
