@@ -110,6 +110,7 @@ body{
     background-color: #ffffff;
     margin: 48px 0 0 0;
     border-top: 1px solid #f1f1f1;
+    position: relative;
 }
 .top ul{
     float: left;
@@ -181,14 +182,16 @@ body{
 .bottom ul li a:hover{
     color: #00c3f5;
 }
+.bottom ul li:nth-child(10){
+    position: relative;
+}
 .bottom ul li:nth-child(10) img{
     width: 16px;
     height: 16px;
 }
 .bottom ol{
     position:absolute;
-    right: 459px;
-    top:537px;
+    bottom: 20px;
     display: none;
     background-color: #fff;
 } 
@@ -242,7 +245,7 @@ body{
 .shaoma{
     position: absolute;
     right: 140px;
-    bottom: -10px;
+    bottom: 66px;
     display:none;
 
 }
