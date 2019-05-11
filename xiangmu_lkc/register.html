@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flyme 账号 - 注册</title>
+    <link rel="stylesheet" href="css/common/iconfont.css">
+    <link rel="stylesheet" href="css/common/reset.css">
+    <link rel="stylesheet" href="css/common/common_login_register.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo-box">
+            <div class="logo"><a href="index.html"></a></div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="wrap-content">
+            <form class="loginBox">
+                <p class="tit">注册 Flyme 账号</p>
+                <span id="login_msg"></span>
+                <input type="text" placeholder="手机号码" maxlength="20" id="phonenum" name="username" autocomplete="off"
+                    class="inputs" />
+                <input type="password" placeholder="密码" maxlength="20" id="password" name="password" autocomplete="off"
+                    class="inputs" />
+                <p id="areacode">+86</p>
+                <ul class="phoneCode">
+                    <div>常用区号</div>
+                    <li data-code="+86">
+                        <span class="country">中国</span>
+                        <span class="phone-code">+86</span>
+                    </li>
+                    <li data-code="+886">
+                        <span class="country">中国台湾</span>
+                        <span class="phone-code">+886</span>
+                    </li>
+                    <li data-code="+852">
+                        <span class="country">中国香港</span>
+                        <span class="phone-code">+852</span>
+                    </li>
+                    <li data-code="+853">
+                        <span class="country">中国澳门</span>
+                        <span class="phone-code">+853</span>
+                    </li>
+                    <li data-code="+212">
+                        <span class="country">纽约</span>
+                        <span class="phone-code">+212</span>
+                    </li>
+                    <li data-code="+213">
+                        <span class="country">洛杉矶</span>
+                        <span class="phone-code">+213</span>
+                    </li>
+                    <li data-code="+202">
+                        <span class="country">华盛顿</span>
+                        <span class="phone-code">+202</span>
+                    </li>
+                    <li data-code="+81">
+                        <span class="country">东京</span>
+                        <span class="phone-code">+81</span>
+                    </li>
+                    <li data-code="+8111">
+                        <span class="country">札幌</span>
+                        <span class="phone-code">+8111</span>
+                    </li>
+                    <li data-code="+8264">
+                        <span class="country">济州岛</span>
+                        <span class="phone-code">+8264</span>
+                    </li>
+                    <li data-code="+6676">
+                        <span class="country">普吉岛</span>
+                        <span class="phone-code">+6676</span>
+                    </li>
+                    <li data-code="+960">
+                        <span class="country">马尔代夫</span>
+                        <span class="phone-code">+960</span>
+                    </li>
+                </ul>
+                <p class="mustknow">点击立即注册，即表示您同意并愿意遵守
+                    <a href="javascript:void(0)">&nbsp;Flyme服务协议&nbsp;</a>和<a href="javascript:void(0)">&nbsp;法律声明&nbsp;</a>
+                </p>
+                <a href="./admin/php/conn.php"><input type="button" name="login-btn" value="立即注册" id="login" /></a>
+                <a class="tologin" href="login.html">登录</a>
+            </form>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="admin/js/common/ajax.js"></script>
+    <script src="admin/js/common/login_register.js"></script>
+    <script src="admin/js/register.js"></script>
+    <script>
+        $(function () {
+          
+            $('#footer').load('commonHTML/log_reg_footer.html');
+        });
+        register.init('.loginBox');
+    </script>
+</body>
+
+</html>
