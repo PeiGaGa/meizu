@@ -1,0 +1,165 @@
+#header{
+    height:81px; 
+}
+#stick{
+    height: 70px;
+    /* position: relative; */
+}
+
+#sti{
+    z-index: 10;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background: #f6f8fb;
+    opacity: .9;
+}
+.st{
+    line-height: 70px;
+}
+.st p{
+    float: left;
+    font-size: 30px;
+    padding-left: 10px;
+}
+.st .stick-rig{
+    /* width: 250px; */
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+}
+
+#aa{
+    height: 1200px;
+    background: yellow;
+}
+
+
+#le-tu{
+    width: 680px;
+    height: 680px;
+    float: left;
+    /* position: relative; */
+}
+#big-tu{
+    width: 680px;
+    height: 680px;
+    overflow: hidden;
+}
+
+#big-tu a img{
+    position: absolute;
+    top: 0;
+
+}
+
+/* 小图片 */
+.small-tu{
+    position: absolute;
+}
+.small-tu li{
+    float: left;
+
+}
+
+/* 右边 */
+#rig-row{
+    float: left;
+    padding-top: 25px;
+}
+.hd{
+    width: 640px;
+    height: 88px;
+    float: left;
+}
+.hd p{
+    color: crimson;
+}
+
+.sell{
+    width: 630px;
+    height: 152px;
+    position: relative;
+    margin-top: 80px;
+    background: #f6f8fb;
+}
+.sell .money{
+    font-size: 42px;
+    color: red;
+}
+
+.sell .youhui{
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.redt{
+    background: #f2eaef;
+    padding: 10px;
+    color: red;
+}
+.youhui small{
+    font-size: 20px;
+    color: red;
+}
+.bluet{
+    padding-left: 10px;
+    color: deepskyblue;
+}
+.jiagou{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.servic-item{
+    padding-top: 25px;
+}
+.servic-item p img{
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.dizhi{
+    padding-top: 20px;
+}
+.dizhi p{
+    padding-top: 20px;
+    
+}
+
+.xinhao{
+    padding-top: 20px;
+}
+.xinhao-a{
+    width: 580px;
+    height: 104px;
+    
+}
+.xinhao span{
+    float: left;
+}
+.xinhao-a{
+    padding-left: 20px;
+    width: 560px;
+    height: 104px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.xinhao-a>a{
+    position: relative;
+    width: 178px;
+    height: 42px;
+    border: 1px solid #000000;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* white-space: nowrap; */
+    float: left;
+    margin: 0 10px 10px 0;
+}

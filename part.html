@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/part.css">
+    <link rel="stylesheet" href="./css/restet.css">
+</head>
+<body>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <script src="./js/jquery.js"></script>
+    <!-- 头部 -->
+    <div id="header">
+        <h1>头部头部</h1>
+    </div>
+
+
+     <!-- 置顶区 -->
+    <div id="stick">
+        <div id="sti">
+            <div class="st">
+                <p>魅族X8</p>
+                <div class="stick-rig">
+                    <a href="#">概述</a>
+                    <a href="#">参数</a>
+                    <a href="#">常见问题</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var $sti = $('#sti');            
+        var alloffset = $sti.offset().top;
+        $(window).scroll(function(){
+            if($(window).scrollTop()>=alloffset){
+                $('#sti').css({'position':'fixed','top':0});
+            }else if($(window).scrollTop()<alloffset){
+                $('#sti').css({'position':'static'});
+            }
+        })
+    </script>
+
+
+    <div id="row">
+        <div id="le-tu">
+            <ul id="big-tu">
+                <li style="z-index: 4;"><img src="./images/big1.jpg"></li>
+                <li style="z-index: 3;"><img src="./images/big2.jpg"></li>
+                <li style="z-index: 2;"><img src="./images/big3.jpg"></li>
+                <li style="z-index: 1;"><img src="./images/big4.jpg"></li>
+            </ul>
+            <ol class="small-tu">
+                <li><img src="./images/small1.jpg"></li>
+                <li><img src="./images/small2.jpg"></li>
+                <li><img src="./images/small3.jpg"></li>
+                <li><img src="./images/small4.jpg"></li>
+            </ol>
+        </div>
+        
+        <div id="rig-row">
+            <div class="hd">
+                <h1>魅族X8</h1>
+                <p class="active">51购实惠|晓龙710人脸+指纹双识别解锁</p>
+            </div>
+            <div class="sell">
+                <div class="money">
+                    <small>￥</small>
+                    <span id="price" class="money-xq">1298.00</span>
+                </div>
+                
+                <div class="youhui">
+                    <i class="redt">优惠券</i>
+                    <small>满1798减150</small>
+                    <a href="#" class="bluet">更多></a>
+                </div>
+                <div class="jiagou">
+                    <i class="redt">加购价</i>
+                    <small>另加15元起，即可换购超值商品</small>
+                    <a href="#" class="bluet">立即加购></a>
+                </div>
+            </div>
+            <div class="servic">
+                <div class="servic-item">
+                    <p>支持<img src="./images/gg.jpg">花呗分期<img src="./images/gg.jpg">顺丰发货<img src="./images/gg.jpg">7天无理由退货</p>
+                </div>
+                <div class="dizhi">
+                    配送服务
+                    <p>本商品由 魅族 负责发货并提供售后服务<i class="bluet">在线客服</i></p>
+                </div>
+            </div>
+            <div class="xinhao">
+                <span>型号</span>
+                <div class="xinhao-a"><a href="#">魅族16X</a>
+                    <a href="#">魅族16S</a>
+                    <a href="#">魅族Note9</a>
+                    <a href="#">魅族16th</a>
+                    <a href="#">魅族16th plus</a>
+                    <a href="#">魅族16X8</a>
+                </div>
+            </div>
+            <div class="wangluo">
+                <span>网络类型</span>
+                <div class="wangluo-a">
+                    <a href="#">全网通公开版</a>
+                </div>
+            </div>
+            <div class="yansefen">
+                <span>颜色分类</span>
+                <div class="yansefen">
+                    <a href="#">汝窑白</a>
+                    <a href="#">晨曦金</a>
+                    <a href="#">砚墨黑</a>
+                    <a href="#">云山白</a>
+                    <a href="#">烟晶紫</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div><img src="./images/main1.jpg"></div>
+
+
+
+
+    
+    <script>
+    var index = 0;
+    function autoPlay(){
+        index++;
+        $("#big-tu > li").eq(index).fadeIn(400).siblings().fadeOut(200);
+        if(index == $("#big-tu > li").length - 1){
+        index = -1; 
+        }
+    }
+    $("ol > li").click(function(){
+        index = $(this).index() -1;
+        autoPlay();
+    })
+    </script>
+
+
+
+</body>
+</html>
