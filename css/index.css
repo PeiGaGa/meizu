@@ -1,0 +1,316 @@
+
+body{
+    background-color: rgb(244, 244, 244);
+}
+.main{
+    width: 1240px;margin: 0 auto;
+}
+#nav{
+    position: absolute;top: 0;width: 100%;z-index: 10;
+}
+.logo{
+    float: left;
+}
+.nav-link{
+    float: right;
+}
+.nav-link li{
+    float:left;
+}
+.nav-link li a{
+    padding: 30px 20px 30px 20px;display: inline-block;color: #fff;
+}
+.nav-link li a:hover{
+    color: #2e74f6;
+}
+
+#ys1-sj,#ys2-sx{
+    position: absolute;top: 81px;width: 100%;z-index: 10;border-top:1px solid blue;
+    background: #fff;height: 200px;display: none;left: 0;
+}
+.ys1-show,.ys2-show{
+    width: 150px;text-align: center;
+}
+.ys1-show img,.ys2-show img{
+    width: 120px;padding-top: 20px;
+}
+.ys1-show span,.ys2-show span{
+    display: block;color: #333;font-size: 12px;
+}
+#ys1-sj .main .ys1-show,#ys2-sx .main .ys2-show{
+    padding: 0;
+}
+
+#ys9-xz{
+    position: absolute;top: 81px;width: 100%;z-index: 10;border-top:1px solid blue; 
+    background: #fff;height: 320px;display: none;left: 0;
+}
+#ys9-xz img{
+    height: 300px; margin-top:10px; 
+}
+
+#search{
+    float: right;width: 150px;height: 30px;
+    background-color: #fff;
+    border:1px solid #333;
+    border-radius: 20px;
+    margin: 27px 20px 0 0;
+}
+#search #search-text{
+    border: 0px;width: 97px; margin: 8px 0 0 16px; 
+    font-size: 12px;
+    outline: 0px;
+}
+#search span{
+    font-size: 24px;float: right; margin: 2px 12px 0 0;
+}
+.logo-logon{
+    float: right;margin: 30px 20px 0 0;color:#fff;
+}
+.logo-shop{
+    float: right;margin: 30px 20px 0 0;color:#fff;
+}
+
+.img-list {
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+}
+.img-list li{
+    position: absolute;
+}
+.img-list img{
+    height: 680px;
+    margin-left:-500px; 
+}
+
+.banner{
+    position: relative;
+}
+.banner-nav-list{
+    position: absolute; bottom: 20px;
+    left: 47%;z-index: 10;
+}
+.banner-nav-list li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 10px;
+}
+.banner-nav-list .active{
+    width: 9px;height: 9px;
+    margin-top: 8px; 
+    background-color: transparent;
+    border:1px solid #ffffff;
+}
+#show{
+    height: 280px;background-color: #fff;
+}
+#show ul li{
+    float: left;width: 310px;height: 190px;
+    padding-top: 50px;text-align: center;
+}
+#show img{
+    height: 130px;
+}
+#show p{
+    color:#333;font-size: 20px;
+}
+#show span{
+    font-size: 14px;color: #999;
+}
+
+
+.banner-img a{
+    height: 450px;display: block;
+    transition: opacity .2s linear;
+}
+.banner-img a:hover{
+    opacity: .85;
+}
+h1{
+    font-weight: 400;text-align: center;color: #333;margin: 50px 0 10px 0;
+}
+#section .banner-img a{
+    background: url('../images/section/1.jpg') -520px 0;
+}
+
+
+.section-show,#audio,#parts,#house{
+    overflow: hidden;
+}
+.big a{
+    width: 615px;height: 610px;float: left;
+    background: #fff;margin: 12px 10px 0 0;
+    text-align: center;position: relative;
+}
+.section-show span{
+    display: block;
+}
+.section-show li:nth-child(2) a,.section-show li:nth-child(6) a,.section-show li:nth-child(10) a{
+    margin-right: 0;
+}
+.big .box-info{
+    padding-top:58px;
+}
+.big .goods-name{
+    color: #333;font-size: 28px;margin-bottom: 5px;
+}
+.big .goods-desc{
+    color: #333;font-size: 18px;margin-bottom: 5px;
+}
+.big .goods-price{
+    color: #c00;font-size: 22px;
+    padding-left: 14px;
+}
+.big .goods-price i{
+    font-size: 14px;
+}
+.goods-img{
+    height: 460px;
+}
+.sign-red{
+    position: absolute;
+    background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.small a{
+    float: left;
+    position: relative;
+    width: 303px;
+    height: 375px;
+    margin-right: 9px;
+    margin-top: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all .3s ease;
+    text-align: center;
+}
+.section-show a:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+.small img{
+    height: 230px;padding-top: 30px; 
+}
+.small .box-info{
+    text-align: center;
+}
+.small .goods-name{
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.small .goods-desc{
+    color: #999;
+    font-size: 14px;margin-bottom: 5px;
+}
+.small .goods-price{
+    display: inline-block;
+    color: #c00;
+    font-size: 22px;margin-bottom: 5px;
+}
+.small .goods-price i{
+    font-size: 14px;
+}
+.sign-bull{
+    position: absolute;
+    background-image: linear-gradient(120deg,#2e74f6,#56bdf9);
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+#audio .banner-img a{
+    background: url('../images/section/2.jpg') -520px 0;  
+}
+
+.clearfix dt,.clearfix dd {
+    float: left;
+    position: relative;
+    width: 303px;
+    height: 375px;
+    margin-right: 9px;
+    margin-top: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all .3s ease;
+    text-align: center;
+}
+.clearfix dd:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+.chlerfix dt,.chlerfix dd{
+    position: relative;
+}
+.clearfix span{
+    display: block;width: 100%;
+}
+.clearfix .box-info{
+    position: absolute;text-align: center;top: 270px;
+}
+.clearfix dt img{
+    width: 303px;
+}
+.clearfix dt .goods-name{
+    color: #fff;font-size: 21px;font-weight: 700;
+}
+.clearfix dt .goods-desc{
+    color: #fff;font-size: 14px;margin: 3px 0 3px 0;
+}
+.clearfix dt .goods-price{
+    font-size: 24px;font-weight: 700;color: #00fefb; 
+}
+
+
+.clearfix dd img{
+    width: 230px;margin-top: 30px;
+}
+.chlerfix dd{
+    width: 303px;height: 375px;
+}
+.clearfix dd .goods-name{
+    color: #333;font-size: 16px;
+}
+.clearfix dd .goods-desc{
+    color: #999;font-size: 14px;margin: 3px 0 3px 0;
+}
+.clearfix dd .goods-price{
+    color: #c00;font-size: 22px;
+}
+.clearfix dd .goods-price s{
+    font-size: 14px;
+    margin-left: 8px;
+    color: #666;
+}
+
+.clearfix dd:nth-child(4){
+    margin-right: 0;
+}
+#parts .banner-img a{
+    background:  url('../images/section/3.jpg') -520px 0;  
+}
+#house .banner-img a{
+    background:  url('../images/section/4.jpg') -520px 0;  
+}
