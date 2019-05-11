@@ -15,7 +15,7 @@
 <body>
       <div id="header">
             <div class="logo-box">
-                  <div class="logo"><a href="index.html"></a></div>
+                  <div class="logo"><a href="javascript:void(0)"></a></div>
             </div>
       </div>
       <!-- 登录表单 -->
@@ -124,12 +124,51 @@
       <script src="admin/js/common/ajax.js"></script>
       <script src="admin/js/common/login_register.js"></script>
       <script src="admin/js/login.js"></script>
-      <script>
+      <script src="admin/js/cookie.js"></script>
+      <!-- <script>
             $(function () {
                  
                   $('#footer').load('commonHTML/log_reg_footer.html');
             });
             login.init('.loginBox');
+      </script> -->
+      <script type="text/javascript">
+            function promiseAjax(params) {
+                  var promise = new Promise(function (resolve, reject) {
+                        //执行异步任务，只要new操作，就会执行这里的异步任务
+                        var xhr = new XMLHttpRequest();
+                        xhr.onreadystatechange = function () {
+                              if (this.readyState == 4 && this.status == 200) {
+                                    resolve(this.responseText);
+                              }
+                        }
+                        //ajax出错的时候触发
+                        xhr.onerror = function () {
+                              reject('网络出错，请稍后再试')
+                        }
+                        xhr.open(params.method, params.url, true);
+                        xhr.send(null);
+                  });
+                  return promise; //返回promise对象
+            }
+
+            document.getElementById('login').onclick = function () {
+                  var username = document.getElementById('username').value;
+                  var password = document.getElementById('password').value;
+                  promiseAjax({
+                        "method": "get",
+                        "url": "./login.php?username=" + username + "&password=" + password
+                  }).then(function (res) {
+                        var result = JSON.parse(res);
+                        if (result.code == 200) {
+                              alert('登录成功，马上要跳转');
+                        } else {
+                              alert('登陆失败')
+                        }
+                  }).catch(function (err) {
+                        console.log(err);
+                  })
+            }
       </script>
 </body>
 

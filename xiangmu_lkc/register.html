@@ -82,7 +82,7 @@
                 <p class="mustknow">点击立即注册，即表示您同意并愿意遵守
                     <a href="javascript:void(0)">&nbsp;Flyme服务协议&nbsp;</a>和<a href="javascript:void(0)">&nbsp;法律声明&nbsp;</a>
                 </p>
-                <a href="./admin/php/conn.php"><input type="button" name="login-btn" value="立即注册" id="login" /></a>
+                <input type="button" name="login-btn" value="立即注册" id="login" />
                 <a class="tologin" href="login.html">登录</a>
             </form>
         </div>
@@ -92,12 +92,25 @@
     <script src="admin/js/common/ajax.js"></script>
     <script src="admin/js/common/login_register.js"></script>
     <script src="admin/js/register.js"></script>
-    <script>
+    <script src="admin/js/cookie.js"></script>
+    <!-- <script>
         $(function () {
           
             $('#footer').load('commonHTML/log_reg_footer.html');
         });
         register.init('.loginBox');
+    </script> -->
+    <script type="text/javascript">
+	
+        //思路：点击注册按钮，获取用户名和密码存放到cookie，在跳转到登录页面
+        document.getElementById('login').onclick = function(){//点击事件,点击btn
+            var phonenum = document.getElementById('phonenum').value;//获取用户名的值
+            var pwd = document.getElementById('password').value;//获取密码的值
+            setCookie('phonenum',phonenum,7);//设置用户名,存储七天
+            setCookie('password',pwd,7);//设置密码,存储七天
+            alert('注册成功');
+            location.href = './login.html';
+        }
     </script>
 </body>
 
